@@ -1,4 +1,4 @@
-# Modified on August 22, 2013 by Christa Schank
+# Modified on August 26, 2013 by Christa Schank
 
 # Interpretation function
 multipleRegressionWords <- function(x){
@@ -94,7 +94,7 @@ multipleRegressionWords <- function(x){
     }
     # Interpret Model/R-squared
     text<-paste("The R-squared value of ",round(x$r.squared,3)," (adjusted R-squared = ",round(x$adj.r.squared,3),") indicates that this formula explains about ",round(x$r.squared,3)*100," percent of the variation in ",yname,", based on results from the current data. \n
-	To predict individual values of ",yname," based on the regression line, enter the appropriate values for each dependent variable into the formula below.
+	To predict individual values of ",yname," based on the regression line, enter the appropriate values for each independent variable into the formula below.
 	Predictions may be under- or over-estimates of the actual value of ",yname,". \n \n",sep="")
     wrapper(text)
 
